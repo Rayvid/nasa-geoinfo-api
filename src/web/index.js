@@ -30,6 +30,7 @@ middlewares.beforeHandler.forEach(_ => _(app));
 app.get('/health', routes.healthCheck);
 app.get('/health/sentry', routes.sentryPing);
 app.get('/version', routes.versionCheck);
+app.get('/geoJson', routes.fetchGeoJson);
 
 app.use(middlewares.notFound);
 
