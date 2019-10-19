@@ -1,0 +1,32 @@
+{
+  "server": {
+    "envName": "development",
+    "listenOnPort": 80
+  },
+  "logger": {
+    "dir": "logs",
+    "fileName": "combined.log",
+    "level": {
+      "__comment__": "File level set higher to not consume disk too much",
+      "file": "warn",
+      "elastic": "info",
+      "console": "info"
+    }
+  },
+  "db": {
+    "mongo": {
+      "fullConnString": "",
+      "schema": "mongodb",
+      "host": "mongo",
+      "user": "",
+      "password": "",
+      "port": "",
+      "database": "{dbName}",
+      "params": "",
+      "poolSize": 5
+    }
+  },
+  "sentry": {
+    "dsn": ""
+  }
+}

@@ -1,0 +1,8 @@
+.*
+LICENSE
+VERSION
+README.md
+node_modules/
+docker/
+logs/
+src/util/logger/logs/
