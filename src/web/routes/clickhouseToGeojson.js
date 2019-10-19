@@ -11,13 +11,13 @@ module.exports = {
         return {
           "type": "Feature",
           "properties": {
-            dbh: values[2],
+            dbh: values[2 + (req.query.skipCol && Number(req.query.skipCol) || 0)],
           },
           "geometry": {
             "type": "Point",
             "coordinates": [
-              values[0],
-              values[1]
+              values[0 + (req.query.skipCol && Number(req.query.skipCol) || 0)],
+              values[1 + (req.query.skipCol && Number(req.query.skipCol) || 0)]
             ]
           }
         }
