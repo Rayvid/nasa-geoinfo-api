@@ -11,7 +11,7 @@ module.exports = {
     app => app.options('*', cors()),
     app => app.use('*', (req, res, next) => {
       //replace localhost to the address of your server
-      res.header("Access-Control-Allow-Origin", "https://bananasa.s3.eu-west-1.amazonaws.com");
+      res.header("Access-Control-Allow-Origin", "http://bananasa.s3.eu-west-1.amazonaws.com");
       res.header("Access-Control-Allow-Headers", "X-Requested-With");
       res.header('Access-Control-Allow-Headers', 'Content-Type');
       res.header('Access-Control-Allow-Credentials', true);
